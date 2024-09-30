@@ -1,0 +1,155 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Add this to ensure relative positioning */
+  max-width: 1400px;
+  width: 100%;
+}
+.header__blogName {
+  margin-left: 20px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hide by default */
+  margin-right: 20px;
+}
+
+/* Banner Styles */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  position: absolute;
+
+  right: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Banner Styles */
+
+/* Layout for blog and news */
+/*.content-container {
+    display: flex;
+    margin-top: 20px;
+    align-items: start;
+    gap: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+  }*/
+
+@media (max-width: 768px) {
+  .header__container {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+    margin-left: auto;
+  }
+
+  nav {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* When the menu is active on mobile */
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 52px; /* Adjust according to your header height */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-color: #333;
+
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+  /* Hide nav by default */
+  nav {
+    display: none;
+    padding-top: 30px;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+}
