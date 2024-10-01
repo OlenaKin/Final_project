@@ -21,13 +21,15 @@ body {
   height: 100vh;
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scroll */
-  background-color: blanchedalmond;
+  background-color: rgb(227, 227, 117);
 }
 
 .app-container {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  border: 2px solid red;
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,7 +39,7 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d83232;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
