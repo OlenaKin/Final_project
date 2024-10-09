@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import teaLogo from "../../assets/tea.png";
 import "./style.css";
 
-function Header({ blogName }) {
+function Header({ blogName, text }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,9 +11,21 @@ function Header({ blogName }) {
 
   return (
     <header className="header">
-      <div className="header__container">
+      {/*<div className="header__container">
         <div className="header__blogName">
           <h1>{blogName}</h1>
+        </div>*/}
+      <div className="header__container">
+        {/* Blog Name and Logo */}
+        <div className="header__blogName">
+          {/* Render the imported image */}
+          <h1>{blogName}</h1>
+          <img
+            src={teaLogo}
+            alt="Logo"
+            className="header__logo"
+            style={{ height: "80px" }}
+          />
         </div>
 
         {/* Hamburger menu button for mobile */}
@@ -28,6 +41,9 @@ function Header({ blogName }) {
             </li>
             <li>
               <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/about">Study</a>
             </li>
             <li>
               <a href="/contact">Contact</a>

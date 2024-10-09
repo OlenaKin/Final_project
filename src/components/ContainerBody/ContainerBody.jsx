@@ -1,4 +1,9 @@
 import React, { useEffect } from "react";
+import lap from "../../assets/lap.png";
+import interview from "../../assets/interview.jpg";
+import comfort from "../../assets/comfort.jpg";
+import comfortGroup from "../../assets/group-comfort.jpg";
+import joy from "../../assets/joy.jpg";
 import gsap from "gsap"; // Import GSAP
 import "./style.css"; // Make sure to create a CSS file for styles
 
@@ -17,36 +22,44 @@ const ContainerBody = () => {
 
     /* ------Great Horned Owl Sequence------  */
     gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
-
-    gsap.set(".circle", { yPercent: -5 });
-    gsap.set(".dotsBlue", { yPercent: 10 });
-    gsap.set(".owlHorned", { yPercent: -20 });
-    gsap.set(".clusterGreat", { yPercent: 5 });
+    //gsap.set(".circle", { yPercent: -5 });
+    gsap.set(".dotsBlue", { yPercent: 20 });
+    gsap.set(".owlHorned", { yPercent: -10 });
+    gsap.set(".clusterGreat", { yPercent: 6 });
 
     gsap.to(".circle", {
       yPercent: 5,
+      scale: 1.3,
       ease: "none",
       scrollTrigger: {
         trigger: ".clusterGreat",
+        start: "top center",
+        end: "bottom center",
         scrub: 1,
       },
     });
 
     gsap.to(".dotsBlue", {
-      yPercent: -10,
+      yPercent: -5,
+      scale: 1.3,
       //ease: "none",
       //rotation: 100,
       scrollTrigger: {
         trigger: ".clusterGreat",
+        //start: "top center",
+        //end: "bottom center",
         scrub: 1,
       },
     });
 
     gsap.to(".owlHorned", {
-      yPercent: 20,
+      yPercent: 22,
+      scale: 1.4,
       ease: "none",
       scrollTrigger: {
         trigger: ".clusterGreat",
+        start: "top center",
+        end: "end center",
         scrub: 1,
       },
     });
@@ -98,6 +111,7 @@ const ContainerBody = () => {
 
     gsap.to(".owlBurrowing", {
       yPercent: 20,
+      scale: 1.3,
       ease: "none",
       scrollTrigger: {
         trigger: ".clusterBurrowing",
@@ -126,7 +140,7 @@ const ContainerBody = () => {
     });
 
     /* --- Split the text, Great Horned Owl --- */
-    const SplitGreat = new SplitText(".titleGreathorned", {
+    /*const SplitGreat = new SplitText(".titleGreathorned", {
       type: "words,chars",
     });
     const chars = SplitGreat.chars;
@@ -140,7 +154,7 @@ const ContainerBody = () => {
     tlSplitGreat.from(
       chars,
       {
-        duration: 0.8,
+        duration: 0.1,
         //opacity: 0,
         y: 10,
         ease: "circ.out",
@@ -149,7 +163,7 @@ const ContainerBody = () => {
       "+=0"
     );
 
-    /* --- Split the text, Burrowing Owl --- */
+    
     const SplitBurrowing = new SplitText(".titleBurrowing", {
       type: "words,chars",
     });
@@ -172,7 +186,7 @@ const ContainerBody = () => {
         },
       },
       "+=0"
-    );
+    );*/
 
     // Clean up function to reset animations if necessary
     return () => {
@@ -193,59 +207,68 @@ const ContainerBody = () => {
     <div>
       <section>
         <div className="title titleGreathorned">
-          <span>The great horned owl</span> also known as the tiger owl or the
-          hoot owl, is a large owl native to the Americas.
+          <span>English for IT</span> is not just important, but necessary,
+          because all technical documentation for the software is in English;
+          most domestic companies cooperate with foreign partners and often, if
+          not daily, use English. Therefore, for any IT company, English is an
+          opportunity to reach a new level with professionals in your team.
+          English for Information Technology is an advanced, multi-level course
+          for IT professionals created by Empire methodologies using authentic
+          materials from IT sources.
         </div>
       </section>
 
       <section className="cluster clusterGreat">
-        <div className="circle clusterPieces">
-          <img
-            src="https://www.vec.ca/wp-content/uploads/2019/03/English-Language-Level-System.jpg"
-            alt=""
-          />
-        </div>
-
         <div className="owlHorned clusterPieces">
           <img
             /*src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/great_horned_owl.jpg"*/
-            src="https://live.staticflickr.com/7285/8739663144_d763ebc912_b.jpg"
+            src={comfort}
             alt="Great Horned Owl"
           />
-          <div className="caption">
-            <span>/01</span> GREAT HORNED OWL
-          </div>
         </div>
 
         <img
           className="dotsBlue clusterPieces"
           /*src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/dots_blue_494x434.svg"*/
-          src="https://www.theamericanhour.com/Storage/blogs/originals/1c%20%20Nice%20Cuppa%20Tea.jpg"
+          src={comfortGroup}
           alt="Blue Dots"
         />
+
+        <div className="circle clusterPieces">
+          <img
+            /*src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/great_horned_owl.jpg"*/
+            src={joy}
+            alt="Great Horned Owl"
+          />
+        </div>
       </section>
 
       <section>
         <div className="title titleBurrowing">
-          <span>The burrowing owl</span> is a small, long-legged owl found
-          throughout open landscapes of North and South America.
+          <span>English for Information Technology</span> is an advanced,
+          multi-level course for IT professionals created by Empire
+          methodologies using authentic materials from IT sources. English for
+          IT is not just important, but necessary, because all technical
+          documentation for the software is in English; most domestic companies
+          cooperate with foreign partners and often, if not daily, use English.
+          Therefore, for any IT company, English is an opportunity to reach a
+          new level with professionals in your team.
         </div>
       </section>
 
       <section className="cluster clusterBurrowing">
         <img
           className="clusterPieces triangle"
-          src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/triangle_448x446.svg"
+          /*src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/triangle_448x446.svg"*/
+          src={lap}
           alt="Triangle"
         />
         <div className="clusterPieces owlBurrowing">
           <img
-            src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/burrrowing_owl_674x700.jpg"
+            /*src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/burrrowing_owl_674x700.jpg"*/
+            src={interview}
             alt="Burrowing Owl"
           />
-          <div className="caption captionBurrowing">
-            <span>/02</span> BURROWING OWL
-          </div>
         </div>
 
         <img

@@ -1,28 +1,110 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import "./style.css";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import groups from "../../assets/groups.jpg";
+import speaking from "../../assets/speaking.jpg";
+import individual from "../../assets/individual.jpg";
+import "./style.css"; // Add this to style the Hero component
 
-const MovingBackground = () => {
-  const backgroundRef = useRef(null); // Create a ref for the background element
-
-  useEffect(() => {
-    const element = backgroundRef.current; // Get the DOM element from the ref
-
-    // GSAP animation
-    gsap.to(element, {
-      duration: 2,
-      x: 1000, // Move the element to the right
-      //repeat: -1, // Repeat the animation indefinitely
-      yoyo: true, // Reverse the animation when it reaches the end
-    });
-  }, []); // Empty dependency array to run the effect only once
+const Hero = () => {
+  // Slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    arrows: false,
+  };
 
   return (
-    <div className="moving-background" ref={backgroundRef}>
-      {/* Your content here */}
-      <h1>Hello, I'm a moving background!</h1>
-    </div>
+    <section className="hero__section">
+      <div className="hero" id="about_us">
+        {/*<Slider {...settings} className="hero__text-slider slick-container">
+          <div className="hero__text-slider">
+            {/*first slide}
+            <div className="main__mySlides">
+              <div className="hero__text-block">
+                <h2>To this...</h2>
+                <h3>Confident, sharp, smart</h3>
+              </div>
+              <div className="hero__photo-block">
+                <img src={unsure} alt="unsure" />
+              </div>
+            </div>
+            {/*second slide}
+            <div className="main__mySlides">
+              <div className="hero__text-block">
+                <h2>To this...</h2>
+                <h3>Confident, sharp, smart</h3>
+              </div>
+              <div className="hero__photo-block">
+                <img src={unsure} alt="unsure" />
+              </div>
+            </div>
+            {/*third slide}
+            <div className="main__mySlides">
+              <div className="hero__text-block">
+                <h2>And this...</h2>
+                <h3>Able, strong, dominant</h3>
+              </div>
+              <div className="hero__photo-block">
+                <img src={unsure} alt="unsure" />
+              </div>
+            </div>
+          </div>
+        </Slider>*/}
+        <Slider {...settings} className="hero__text-slider slick-container">
+          {/* first slide */}
+          <div className="hero__mySlides">
+            <div className="hero__text-block">
+              <h2>Group lessons</h2>
+              <div className="gsapBox">
+                <h3>
+                  <span>BOOST</span> your confidence
+                </h3>
+                <button className="seeDetails">See details</button>
+              </div>
+            </div>
+            <div className="hero__photo-block">
+              <img src={groups} alt="groups" />
+            </div>
+          </div>
+          {/* second slide */}
+          <div className="hero__mySlides">
+            <div className="hero__text-block">
+              <h2>Individual lessons</h2>
+              <h3>
+                <span>BUILD UP</span> speaking skills
+              </h3>
+              <button className="seeDetails">See details</button>
+            </div>
+            <div className="hero__photo-block">
+              <img src={individual} alt="individual" />
+            </div>
+          </div>
+
+          {/* third slide */}
+          <div className="hero__mySlides">
+            <div className="hero__text-block">
+              <h2>Speaking clubs</h2>
+              <h3>
+                <span>BROADEN</span> your horizonts
+              </h3>
+              <button className="seeDetails">See details</button>
+            </div>
+            <div className="hero__photo-block">
+              <img src={speaking} alt="speaking" />
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </section>
   );
 };
 
-export default MovingBackground;
+export default Hero;

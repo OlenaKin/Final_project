@@ -4,27 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #e6e87c;
+  background-color: #40a2e3;
   padding: 40px;
 }
 
 .title {
-  color: #cf2512;
-  font-size: 70px;
-  line-height: 98px;
+  color: #3b3030;
   font-family: "Libre Baskerville", serif;
-  padding-top: 60px;
-  padding-bottom: 40px;
+
+  line-height: 35px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   width: 100%;
   background-color: transparent;
-  margin: 40px auto;
+  margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
-  font-kerning: none;
+  /*font-kerning: none;*/
 }
 .title span {
-  color: #ffffff;
+  color: #362fd9;
   overflow: hidden;
+  /* Glow effect */
 }
 
 img {
@@ -32,20 +33,27 @@ img {
 }
 
 section {
+  position: relative;
+  top: 80px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
+  /*border: 2px solid red;*/
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+
+  text-align: left;
 }
 
 .cluster {
   position: relative;
   width: 100%;
   /*max-width: 874px;*/
-  max-width: 1100px;
-  height: 792px;
-  margin: 100px auto;
+  max-width: 1170px;
+  height: 400px;
+  margin: 80px auto;
   background-color: transparent;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 }
 
 .clusterPieces {
@@ -53,25 +61,23 @@ section {
 }
 
 .circle {
-  display: none;
   width: 100%;
   max-width: 360px;
   height: 360px;
-  border-radius: 50%;
-  background-color: #fc659e;
-  left: 214px;
+  top: 180px;
+  left: 440px;
   bottom: 0;
-  z-index: 1;
+  z-index: 500;
 }
 
 .dotsBlue {
   width: 100%;
   height: auto;
-  max-width: 494px;
+  max-width: 450px;
   max-height: 434px;
   z-index: 3;
   left: 0;
-  top: 80px;
+  top: 0;
 }
 
 .owlHorned {
@@ -85,14 +91,12 @@ section {
 }
 
 .caption {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fc659e;
+  font-family: "Libre Baskerville", serif;
+  line-height: 14px;
   text-align: right;
 }
 .caption span {
-  color: #ffffff;
+  color: #362fd9;
 }
 
 #wrappie {
@@ -102,10 +106,11 @@ section {
 }
 
 .dotsWhite {
+  display: none;
   width: 100%;
   height: auto;
-  max-width: 310px;
-  max-height: 588px;
+  max-width: 250px;
+  max-height: 388px;
   z-index: 2;
   left: 0;
   top: 400px;
@@ -114,8 +119,8 @@ section {
 .owlBurrowing {
   width: 100%;
   height: auto;
-  max-width: 674px;
-  max-height: 700px;
+  max-width: 504px;
+  max-height: 300px;
   top: 162px;
   right: 0;
   z-index: 1;
@@ -123,9 +128,9 @@ section {
 
 .triangle {
   width: 100%;
-  max-width: 448px;
+  max-width: 480px;
   height: 446px;
-  left: -28px;
+  right: -35%;
   top: 0;
   z-index: 3;
 }
@@ -141,9 +146,19 @@ section {
   padding-bottom: 300px;
 }
 
+@media screen and (max-width: 1440px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 1025px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    line-height: normal;
+  }
   .title {
-    font-size: 60px;
     line-height: 74px;
     padding-left: 40px;
   }
@@ -196,8 +211,13 @@ section {
 }
 
 @media screen and (max-width: 640px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    line-height: normal;
+  }
   .title {
-    font-size: 44px;
+    font-size: 24px;
     line-height: 61px;
   }
 
@@ -250,9 +270,11 @@ section {
 
 @media screen and (max-width: 540px) {
   .title {
-    font-size: 34px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
     line-height: 51px;
-    padding-left: 0px;
+    padding: 8px;
+    line-height: 1.4rem;
   }
   .clusterPieces {
     position: relative;
