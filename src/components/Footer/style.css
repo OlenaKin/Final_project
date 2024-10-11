@@ -1,0 +1,73 @@
+footer {
+  background-color: #362fd9;
+  color: white;
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  max-height: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer__blogName {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  word-spacing: 7px;
+}
+
+.footer__blogName .footer__logo {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  transform: rotateX(180deg);
+  transform: rotateY(180deg);
+  height: 80px;
+  width: 80px;
+}
+
+footer h2 {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 38px;
+  margin: 20px 0;
+  white-space: nowrap;
+  color: white;
+  padding-left: 8px;
+}
+
+.footer-section__links {
+  display: flex;
+  flex: 1;
+}
+
+.footer-section__links ul {
+  list-style: none;
+  text-transform: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-section__links ul a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.Contact {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+}
+
+.footer-content a,
+.footer-content a:active {
+  color: white;
+}

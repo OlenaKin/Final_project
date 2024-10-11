@@ -19,7 +19,7 @@ function Header({ blogName, text }) {
         {/* Blog Name and Logo */}
         <div className="header__blogName">
           {/* Render the imported image */}
-          <h1>{blogName}</h1>
+          <h2>{blogName}</h2>
           <img
             src={teaLogo}
             alt="Logo"

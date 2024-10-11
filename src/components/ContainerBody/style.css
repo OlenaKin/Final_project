@@ -1,31 +1,30 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body {
-  background-color: #40a2e3;
-  padding: 40px;
+.gsapContainer {
+  position: relative;
+  max-height: 1000px;
+  height: 100%;
+  height: auto;
+  border: 2px solid red;
 }
 
 .title {
   color: #3b3030;
   font-family: "Libre Baskerville", serif;
-
   line-height: 35px;
   padding-top: 20px;
   padding-bottom: 10px;
+  max-width: 1440px;
   width: 100%;
   background-color: transparent;
   margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
-  /*font-kerning: none;*/
+  font-kerning: none;
+  /*max-height: 1000px;
+  height: 100%;*/
 }
 .title span {
   color: #362fd9;
   overflow: hidden;
-  /* Glow effect */
 }
 
 img {
@@ -34,21 +33,17 @@ img {
 
 section {
   position: relative;
-  top: 80px;
+  /*top: 80px;*/
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
-  /*border: 2px solid red;*/
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
-
   text-align: left;
 }
 
 .cluster {
   position: relative;
   width: 100%;
-  /*max-width: 874px;*/
   max-width: 1170px;
   height: 400px;
   margin: 80px auto;
@@ -103,7 +98,7 @@ section {
   width: 960px;
   height: 792px;
   margin: 0 auto;
-}
+} /*
 
 .dotsWhite {
   display: none;
@@ -140,7 +135,7 @@ section {
   height: 996px;
 }
 .captionBurrowing {
-}
+}*/
 
 .spcr300 {
   padding-bottom: 300px;

@@ -21,6 +21,8 @@ const Hero = () => {
     arrows: false,
   };
 
+  const title = "Online English school for IT-specialists";
+
   return (
     <section className="hero__section">
       <div className="hero" id="about_us">
@@ -58,6 +60,7 @@ const Hero = () => {
             </div>
           </div>
         </Slider>*/}
+        <h1>{title}</h1>
         <Slider {...settings} className="hero__text-slider slick-container">
           {/* first slide */}
           <div className="hero__mySlides">
