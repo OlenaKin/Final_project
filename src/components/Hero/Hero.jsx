@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import groups from "../../assets/groups.jpg";
 import speaking from "../../assets/speaking.jpg";
 import individual from "../../assets/individual.jpg";
+import { Link } from "react-router-dom"; // Import Link
 import "./style.css"; // Add this to style the Hero component
 
 const Hero = () => {
@@ -16,12 +17,12 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     fade: true,
     arrows: false,
   };
 
-  const title = "Online English school for IT-specialists";
+  // const title = "Online English school for IT-specialists";
 
   return (
     <section className="hero__section">
@@ -60,18 +61,26 @@ const Hero = () => {
             </div>
           </div>
         </Slider>*/}
-        <h1>{title}</h1>
+        {/* <h1>{title}</h1> */}
         <Slider {...settings} className="hero__text-slider slick-container">
           {/* first slide */}
           <div className="hero__mySlides">
             <div className="hero__text-block">
               <h2>Group lessons</h2>
-              <div className="gsapBox">
-                <h3>
-                  <span>BOOST</span> your confidence
-                </h3>
+
+              <h3>
+                <span>BOOST</span> your confidence
+              </h3>
+              <p>
+                Our qualified teachers help students to overcome "freezing mode"
+                and speak freely. Our qualified teachers help students to
+                overcome "freezing mode" and speak freely. Our qualified
+                teachers help students to overcome "freezing mode" and speak
+                freely.
+              </p>
+              <Link to="/study">
                 <button className="seeDetails">See details</button>
-              </div>
+              </Link>
             </div>
             <div className="hero__photo-block">
               <img src={groups} alt="groups" />
@@ -84,8 +93,18 @@ const Hero = () => {
               <h3>
                 <span>BUILD UP</span> speaking skills
               </h3>
-              <button className="seeDetails">See details</button>
+              <p>
+                Our qualified teachers help students to overcome "freezing mode"
+                and speak freely. Our qualified teachers help students to
+                overcome "freezing mode" and speak freely. Our qualified
+                teachers help students to overcome "freezing mode" and speak
+                freely.
+              </p>
+              <Link to="/study">
+                <button className="seeDetails">See details</button>
+              </Link>
             </div>
+
             <div className="hero__photo-block">
               <img src={individual} alt="individual" />
             </div>
@@ -98,7 +117,16 @@ const Hero = () => {
               <h3>
                 <span>BROADEN</span> your horizonts
               </h3>
-              <button className="seeDetails">See details</button>
+              <p>
+                Our qualified teachers help students to overcome "freezing mode"
+                and speak freely. Our qualified teachers help students to
+                overcome "freezing mode" and speak freely. Our qualified
+                teachers help students to overcome "freezing mode" and speak
+                freely.
+              </p>
+              <Link to="/study">
+                <button className="seeDetails">See details</button>
+              </Link>
             </div>
             <div className="hero__photo-block">
               <img src={speaking} alt="speaking" />

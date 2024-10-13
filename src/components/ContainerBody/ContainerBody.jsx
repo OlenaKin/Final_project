@@ -103,6 +103,14 @@ const ContainerBody = () => {
           opportunity to reach a new level with professionals in your team.
           English for Information Technology is an advanced, multi-level course
           for IT professionals created by Empire methodologies using authentic
+          materials from IT sources. Therefore, for any IT company, English is
+          an opportunity to reach a new level with professionals in your team.
+          English for Information Technology is an advanced, multi-level course
+          for IT professionals created by Empire methodologies using authentic
+          materials from IT sources.Therefore, for any IT company, English is an
+          opportunity to reach a new level with professionals in your team.
+          English for Information Technology is an advanced, multi-level course
+          for IT professionals created by Empire methodologies using authentic
           materials from IT sources.
         </div>
       </section>
@@ -141,7 +149,15 @@ const ContainerBody = () => {
           documentation for the software is in English; most domestic companies
           cooperate with foreign partners and often, if not daily, use English.
           Therefore, for any IT company, English is an opportunity to reach a
-          new level with professionals in your team.
+          new level with professionals in your team. Therefore, for any IT
+          company, English is an opportunity to reach a new level with
+          professionals in your team. English for Information Technology is an
+          advanced, multi-level course for IT professionals created by Empire
+          methodologies using authentic materials from IT sources.Therefore, for
+          any IT company, English is an opportunity to reach a new level with
+          professionals in your team. English for Information Technology is an
+          advanced, multi-level course for IT professionals created by Empire
+          methodologies using authentic materials from IT sources.
         </div>
       </section>
     </div>

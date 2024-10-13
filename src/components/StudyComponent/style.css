@@ -1,0 +1,74 @@
+/* Study.css */
+
+/* Container for the advice and button */
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(180, 238, 239, 0.16),
+    rgba(5, 245, 233, 0.511),
+    rgba(180, 238, 239, 0.16)
+  );
+  padding: 20px;
+  background-color: #f0f0f5; /* Light background to contrast the text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #362fd9; /* Subtle shadow */
+  height: 300px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the advice text */
+.advice-text {
+  font-size: 2rem;
+  color: #333; /* Darker color for the advice */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Button to get new advice */
+.advice-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #362fd9; /* Custom blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.advice-button:hover {
+  background-color: #2b22b3; /* Darker blue on hover */
+}
+
+/* Message text for the advice count */
+.message-text {
+  font-size: 1rem;
+  color: #555; /* Slightly lighter text */
+  margin-top: 15px;
+}
+
+.advice-container button {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 4px #6a52ba;
+  background-color: #362fd9;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+h5 {
+  margin-top: 20px;
+  font-family: "Libre Baskerville", serif;
+}

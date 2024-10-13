@@ -29,14 +29,16 @@ header {
   display: flex;
   align-items: center;
   word-spacing: 7px;
-  
 }
 
 .header__blogName img {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
+}
 
-  margin-bottom: 30px;
+.header a {
+  text-decoration: none;
 }
 
 /* Hamburger icon */
@@ -80,11 +82,12 @@ header h2 {
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 38px;
+  font-size: 22px;
   margin: 20px 0;
   white-space: nowrap;
   color: white;
   padding-left: 8px;
+  font-family: "Dancing Script", cursive;
 }
 
 /* Banner Styles */
@@ -104,8 +107,9 @@ header h2 {
     justify-content: flex-start;
   }
 
-  h1 {
+  h2 {
     font-size: 24px;
+    display: none;
   }
   .content-container {
     flex-direction: column;
@@ -120,6 +124,7 @@ header h2 {
     display: none;
     margin: 0;
     padding: 0;
+    margin-top: 10px;
     width: 100%;
   }
 

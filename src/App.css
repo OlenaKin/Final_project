@@ -13,25 +13,11 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
-}
-
-body {
-  /*background-image: url("./assets/59.jpg"); /* Ensure the path is relative to the CSS file 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  height: auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
-  width: 100%;
-  margin: 0 auto;
-  /*overflow-x: hidden;*/
-  background-color: #f6f5f5f1;
+  text-align: center;
 }
 
 .app-container {

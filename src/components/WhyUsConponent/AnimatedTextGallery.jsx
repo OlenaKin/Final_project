@@ -22,6 +22,7 @@ const AnimatedTextGallery = () => {
     gsap.to(orangeRef.current.querySelector("p"), {
       scrollTrigger: orangeRef.current, // Attach ScrollTrigger to the orange section
       duration: 1,
+      delay: 1,
       rotation: 360,
     });
 
@@ -39,10 +40,11 @@ const AnimatedTextGallery = () => {
     // GSAP animation for the yoyo section with yoyo effect and repeat
     gsap.to(yoyoRef.current.querySelector("p"), {
       scrollTrigger: yoyoRef.current, // Attach ScrollTrigger to the yoyo section
-      scale: 1.5,
+      scale: 1.4,
       yoyo: true,
       once: true,
       duration: 2.5,
+      delay: 1,
       ease: "power2",
     });
   }, []);

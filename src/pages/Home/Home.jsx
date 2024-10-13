@@ -2,14 +2,16 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
 import ContainerBody from "../../components/ContainerBody";
-import ContactSection from "../../components/ContactSection/ContactSection";
+import WhyUsComponent from "../../components/WhyUsConponent/AnimatedTextGallery";
+import Connecting from "../../components/Connecting";
 
 function Home() {
   return (
     <div>
       <Hero />
       <ContainerBody />
-      <ContactSection />
+      <WhyUsComponent />
+      <Connecting />
     </div>
   );
 }
