@@ -11,7 +11,7 @@ import "./App.css"; // Add some CSS for layout styling
 function App() {
   return (
     <Router>
-      <Header blogName="English for IT" />
+      <Header blogName="English for I" />
       <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />
