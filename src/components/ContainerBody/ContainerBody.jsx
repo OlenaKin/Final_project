@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import comfort from "../../assets/comfort.jpg";
 import comfortGroup from "../../assets/group-comfort.jpg";
 import joy from "../../assets/joy.jpg";
-import gsap from "gsap"; // Import GSAP
+//import gsap from "gsap"; // Import GSAP
 import "./style.css";
 
 const ContainerBody = () => {
-  useEffect(() => {
+  /*useEffect(() => {
     // Access SplitText and ScrollTrigger globally if they're loaded via CDN
     const SplitText = window.SplitText;
     const ScrollTrigger = window.ScrollTrigger;
@@ -18,7 +18,7 @@ const ContainerBody = () => {
       return;
     }
 
-    /* ------Great Horned Owl Sequence------  */
+    
     gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
     gsap.set(".circle", { yPercent: -5 });
     gsap.set(".dotsBlue", { yPercent: 20 });
@@ -91,6 +91,7 @@ const ContainerBody = () => {
       gsap.killTweensOf(".clusterGreat");
     };
   }, []);
+  */
 
   return (
     <div className="gsapContainer">
