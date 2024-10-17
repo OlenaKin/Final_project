@@ -1,0 +1,315 @@
+.gsapContainer {
+  position: relative;
+
+  height: auto;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.title {
+  color: #3b3030;
+  font-family: "Libre Baskerville", serif;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 80%;
+  background-color: transparent;
+  margin: 0 auto;
+  overflow: hidden;
+  font-kerning: none;
+  /*max-height: 1000px;
+  height: 100%;*/
+}
+.title span {
+  color: #362fd9;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  /*top: 80px;*/
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.cluster {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  height: 400px;
+  margin: 80px auto;
+  background-color: transparent;
+  padding-bottom: 0;
+}
+
+.clusterPieces {
+  position: absolute;
+}
+
+.circle {
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
+  top: 180px;
+  left: 420px;
+  bottom: 0;
+  z-index: 500;
+}
+
+.dotsBlue {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  max-height: 434px;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+.owlHorned {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  max-height: 700px;
+  top: 0;
+  right: 15px;
+  z-index: 2;
+}
+
+.caption {
+  font-family: "Libre Baskerville", serif;
+  line-height: 14px;
+  text-align: right;
+}
+.caption span {
+  color: #362fd9;
+}
+
+#wrappie {
+  width: 960px;
+  height: 792px;
+  margin: 0 auto;
+} /*
+
+.dotsWhite {
+  display: none;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 388px;
+  z-index: 2;
+  left: 0;
+  top: 400px;
+}
+
+.owlBurrowing {
+  width: 100%;
+  height: auto;
+  max-width: 504px;
+  max-height: 300px;
+  top: 162px;
+  right: 0;
+  z-index: 1;
+}
+
+.triangle {
+  width: 100%;
+  max-width: 480px;
+  height: 446px;
+  right: -35%;
+  top: 0;
+  z-index: 3;
+}
+
+.clusterBurrowing {
+  max-width: 874px;
+  height: 996px;
+}
+.captionBurrowing {
+}*/
+
+.spcr300 {
+  padding-bottom: 300px;
+}
+
+@media screen and (max-width: 1440px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .title {
+    line-height: 74px;
+    padding-left: 40px;
+  }
+
+  .cluster {
+    max-width: 600px;
+    height: 550px;
+    margin: 20px auto;
+  }
+  .dotsBlue {
+    max-width: 340px;
+    left: 0;
+    top: 56px;
+  }
+  .owlHorned {
+    max-width: 310px;
+  }
+  .circle {
+    max-width: 246px;
+    height: 246px;
+    left: 146px;
+    top: 300px;
+  }
+  .caption {
+    bottom: 38px;
+    right: 0;
+  }
+
+  .clusterBurrowing {
+    max-width: 600px;
+    height: 678px;
+  }
+  .dotsWhite {
+    max-width: 216px;
+    left: 0;
+    top: 275px;
+  }
+  .owlBurrowing {
+    max-width: 460px;
+    top: 112px;
+  }
+  .triangle {
+    max-width: 307px;
+    height: 304px;
+    left: -14px;
+  }
+  .captionBurrowing {
+    top: 605px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  section {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    line-height: normal;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 61px;
+  }
+
+  .cluster {
+    max-width: 480px;
+    height: 436px;
+  }
+  .dotsBlue {
+    max-width: 274px;
+    left: 0;
+    top: 45px;
+  }
+  .owlHorned,
+  .owlBurrowing {
+    max-width: 248px;
+  }
+  .circle {
+    max-width: 196px;
+    height: 196px;
+    left: 115px;
+    top: 240px;
+  }
+  .caption {
+    bottom: 25px;
+    right: 0;
+  }
+
+  .clusterBurrowing {
+    max-width: 480px;
+    height: 542px;
+  }
+  .dotsWhite {
+    max-width: 174px;
+    left: 0;
+    top: 220px;
+  }
+  .owlBurrowing {
+    max-width: 369px;
+    top: 88px;
+  }
+  .triangle {
+    max-width: 240px;
+    height: 240px;
+    left: -10px;
+  }
+  .captionBurrowing {
+    top: 482px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    line-height: 51px;
+    padding: 8px;
+    line-height: 1.4rem;
+  }
+  .clusterPieces {
+    position: relative;
+  }
+
+  .cluster {
+    max-width: 320px;
+    height: 530px;
+  }
+  .dotsBlue {
+    display: none;
+  }
+  .owlHorned {
+    max-width: 320px;
+    top: 0;
+  }
+  .circle {
+    display: none;
+  }
+  .caption {
+    float: right;
+    bottom: 0;
+  }
+
+  .clusterBurrowing {
+    max-width: 320px;
+    height: 268px;
+  }
+  .dotsWhite {
+    display: none;
+  }
+  .owlBurrowing {
+    max-width: 320px;
+    top: 0;
+  }
+  .triangle {
+    display: none;
+  }
+  .captionBurrowing {
+    float: right;
+    top: 0;
+  }
+}
