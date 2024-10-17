@@ -1,24 +1,13 @@
-<!-- public/admin/index.html -->
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decap CMS</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/decap-cms-app@latest/dist/decap-cms.css"
-    />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
   </head>
   <body>
-    <script>
-      // Ensure Decap CMS is initialized after the page loads
-      window.CMS = window.CMS || {};
-      window.CMS.init = () => {
-        // Use the right path to your configuration file
-        CMS.init({ config: "./config.yml" });
-      };
-    </script>
+    <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

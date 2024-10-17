@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+//import ScrollTrigger from "gsap/ScrollTrigger";
 import "./style.css"; // Your custom styles
 
 function ContactSection() {
   // Initialize GSAP animations for the form when the component mounts
-  useEffect(() => {
+  /*useEffect(() => {
     // GSAP animation for the contact-container
     gsap.fromTo(
       ".contact-container",
@@ -25,7 +25,7 @@ function ContactSection() {
         },
       } // Final state (fully visible and moves to the center)
     );
-  }, []);
+  }, []);*/
 
   return (
     <div className="bottom-block">

@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import CMS from "decap-cms-app"; // Import Decap CMS
-import { de } from "decap-cms-locales"; // Import German locale
+//import MyTemplate from "./MyTemplate"; // Import your preview template if you have one
 
 const Admin = () => {
   useEffect(() => {
-    // Initialize the CMS with GitHub authentication
+    // Initialize the CMS
     CMS.init({
       backend: {
         name: "github",
-        repo: "YourUsername/YourRepoName", // Your GitHub repository
+        repo: "OlenaKin/Final_project", // Replace with your GitHub username and repository name
         branch: "main", // The branch where the CMS will push content changes
-        auth_endpoint: "/admin", // The callback URL for OAuth
+        auth_endpoint: "https://finaleprogetto22.netlify.app/admin", // The callback URL for OAuth
         api_root: "https://api.github.com", // GitHub API endpoint
         login: true, // Enable login
       },
     });
 
-    // Register the German locale
-    CMS.registerLocale("de", de);
+    // Register your preview template (if you have one)
+    CMS.registerPreviewTemplate("my-template" /*, MyTemplate*/);
   }, []);
 
   return (
