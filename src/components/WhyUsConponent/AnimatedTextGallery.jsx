@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+//import { gsap } from "gsap";
+//import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./style.css"; // Create a CSS file to style your elements
 
 // Register the ScrollTrigger plugin with GSAP
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedTextGallery = () => {
   // Create refs for each section
@@ -14,12 +14,12 @@ const AnimatedTextGallery = () => {
 
   useEffect(() => {
     // Set default toggle actions for all ScrollTriggers
-    ScrollTrigger.defaults({
-      toggleActions: "restart pause resume pause",
-    });
+    //ScrollTrigger.defaults({
+    //toggleActions: "restart pause resume pause",
+  });
 
-    // GSAP animation for the orange section
-    gsap.to(orangeRef.current.querySelector("p"), {
+  // GSAP animation for the orange section
+  /*gsap.to(orangeRef.current.querySelector("p"), {
       scrollTrigger: orangeRef.current, // Attach ScrollTrigger to the orange section
       duration: 1,
       delay: 1,
@@ -47,7 +47,7 @@ const AnimatedTextGallery = () => {
       delay: 1,
       ease: "power2",
     });
-  }, []);
+  }, []);*/
 
   return (
     <div className="container">
