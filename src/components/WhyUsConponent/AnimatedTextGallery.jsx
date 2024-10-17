@@ -53,13 +53,13 @@ const AnimatedTextGallery = () => {
     <div className="container">
       <h3>Why choose us?</h3>
       <div className="section orange" ref={orangeRef}>
-        <p>All your lessons are customised</p>
+        <p>Custumised approach</p>
       </div>
       <div className="section purple" ref={purpleRef}>
-        <p>You talk 60-70% of the time</p>
+        <p>Talk 60-70% of the time</p>
       </div>
       <div className="section yoyo" ref={yoyoRef}>
-        <p>You study flexibly with focus on your needs</p>
+        <p>Study flexibly with focus on your needs</p>
       </div>
     </div>
   );

@@ -66,7 +66,7 @@ const Hero = () => {
           {/* first slide */}
           <div className="hero__mySlides">
             <div className="hero__text-block">
-              <h2>Group lessons</h2>
+              <h1>Group lessons</h1>
 
               <h3>
                 <span>BOOST</span> your confidence
@@ -89,7 +89,7 @@ const Hero = () => {
           {/* second slide */}
           <div className="hero__mySlides">
             <div className="hero__text-block">
-              <h2>Individual lessons</h2>
+              <h1>Individual lessons</h1>
               <h3>
                 <span>BUILD UP</span> speaking skills
               </h3>
@@ -113,7 +113,7 @@ const Hero = () => {
           {/* third slide */}
           <div className="hero__mySlides">
             <div className="hero__text-block">
-              <h2>Speaking clubs</h2>
+              <h1>Speaking clubs</h1>
               <h3>
                 <span>BROADEN</span> your horizonts
               </h3>

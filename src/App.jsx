@@ -20,7 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer blogName="English for IT" />
+      <Footer blogName="English for I" />
     </Router>
   );
 }

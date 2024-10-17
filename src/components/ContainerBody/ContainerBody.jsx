@@ -52,7 +52,7 @@ const ContainerBody = () => {
 
     gsap.to(".owlHorned", {
       yPercent: 22,
-      scale: 1.4,
+      scale: 1.3,
       ease: "none",
       scrollTrigger: {
         trigger: ".clusterGreat",

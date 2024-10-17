@@ -56,7 +56,7 @@ function ContactSection() {
                 className="form-textarea"
               ></textarea>
               <button className="bottom-block__submit-button" type="submit">
-                SUBMIT
+                Записатись на тестування
               </button>
             </form>
           </div>

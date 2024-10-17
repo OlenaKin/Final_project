@@ -1,3 +1,30 @@
+:root {
+  --transparent: oklch(0 0 0 / 0%);
+  --purple-100: oklch(0.86 0.08 280);
+  --purple-200: oklch(0.82 0.06 280);
+  --purple-300: oklch(0.71 0.12 280);
+  --purple-400: oklch(0.61 0.18 280);
+  --purple-500: oklch(0.5 0.21 280);
+  --purple-600: oklch(0.42 0.18 280);
+  --purple-800: oklch(0.25 0.15 280);
+  --purple-900: oklch(0.13 0.06 280);
+  --purple-900: oklch(0.13 0.06 280);
+}
+
+body {
+  --color-blue: #9de7fd; /* Keep your blue color */
+  --color-white: #f9f9f9; /* A very light gray instead of pure white */
+
+  --gradient-summer-fair: linear-gradient(
+    144.02deg,
+    var(--color-white) 20%,
+    /* Make white cover more area */ var(--color-blue) 80%
+      /* Reduce the blue area */
+  );
+
+  background: var(--gradient-summer-fair); /* Use the gradient as background */
+}
+
 .App {
   text-align: center;
 }

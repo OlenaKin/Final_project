@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 80%;
-  max-height: 490px;
+  max-height: 480px;
   height: 100%;
   /* border-radius: 15px; */
   text-align: center;
@@ -9,23 +9,15 @@
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px 0 rgba(23, 18, 177, 0.5);
   padding: 20px;
   background-image: linear-gradient(
-      rgba(240, 214, 219, 0.925),
-      rgba(220, 225, 234, 0.731)
+      rgba(132, 210, 255, 0.925),
+      rgba(173, 194, 222, 0.887)
     ),
     url("../../assets/cosmopolitan.jpg");
   background-size: cover; /* Make sure the image covers the entire div */
   background-position: center;
   /* background-image: url("../../assets/cosmopolitan.jpg"); */
-}
-
-h1 {
-  /* color: rgb(255, 73, 1); */
-  margin: 20px 0 50px 0;
-  font-size: 2rem;
-  /* text-shadow: 1px 1px 2px black; */
 }
 
 .slick-dots {
@@ -35,7 +27,7 @@ h1 {
   height: 35%;
   margin-left: auto;
   height: 5%;
-  top: 77%;
+  top: 78%;
 }
 
 .slick-dots li {
@@ -102,7 +94,7 @@ h1 {
   flex: 1;
   height: auto;
   position: absolute;
-  padding: 20px;
+
   top: 0;
   margin-right: 20px;
   height: 85%;
@@ -130,27 +122,28 @@ h1 {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 17px;
   color: black;
   font-style: normal;
-  line-height: 25px;
-  margin-bottom: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
   text-shadow: none;
 }
 
-h2 {
+h1 {
   padding-top: 10px;
   font-weight: 700;
   font-family: "Libre Baskerville", serif;
-  font-size: 50px;
+  font-size: 46px;
   letter-spacing: 1.5px;
   color: #3b3030;
   text-shadow: none;
   line-height: 57.52px;
-  margin-bottom: 20px;
+  font-size: 3.6rem;
+  margin-bottom: 10px;
   text-align: left;
   text-transform: uppercase;
-  color: rgb(10, 9, 9);
+  color: #3b3030;
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
   font-family: "Teko", sans-serif;
 }
@@ -162,8 +155,8 @@ h3 {
   color: #362fd9;
   /*text-shadow: 2px 2px 4px #3b3030;*/
   text-align: left;
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin-bottom: 10px;
+  font-size: 30px;
   line-height: 64px;
   font-style: italic;
 }
@@ -171,10 +164,10 @@ h3 {
 .hero__text-block .seeDetails {
   width: 200px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-transform: uppercase;
-  box-shadow: 2px 2px 4px #6a52ba;
-  background-color: #362fd9;
+  box-shadow: 1px 1px 2px rgb(23, 5, 87);
+  background-color: #0f1123;
   color: white;
   cursor: pointer;
   margin: 0 auto;
@@ -565,7 +558,7 @@ span {
 /* Active dot style (filled with white) */
 .slick-dots li.slick-active button {
   opacity: 0.75;
-  background-color: rgba(255, 255, 255, 1);
+
   background-color: #362fd9; /* Fill the active dot */
   border: none; /* Remove border for active dot */
   box-shadow: 2px 2px 4px #6a52ba;
@@ -575,9 +568,7 @@ span {
   content: "";
   width: 100%; /* Ensure fill fits the button size */
   height: 100%; /* Ensure fill fits the button size */
-  background-color: rgba(255, 255, 255, 1);
   background-color: #362fd9; /* Active dot filled with white */
-  box-shadow: 2px 2px 4px #6a52ba;
   border-radius: 50%; /* Ensure round shape */
   position: absolute; /* Position within the button */
   top: 0;
