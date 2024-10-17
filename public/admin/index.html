@@ -1,0 +1,24 @@
+<!-- public/admin/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decap CMS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/decap-cms-app@latest/dist/decap-cms.css"
+    />
+  </head>
+  <body>
+    <script>
+      // Ensure Decap CMS is initialized after the page loads
+      window.CMS = window.CMS || {};
+      window.CMS.init = () => {
+        // Use the right path to your configuration file
+        CMS.init({ config: "./config.yml" });
+      };
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>
