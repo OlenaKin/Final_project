@@ -17,7 +17,7 @@ const Admin = () => {
     });
 
     // Register your preview template (if you have one)
-    CMS.registerPreviewTemplate("my-template" /*, MyTemplate*/);
+    CMS.registerPreviewTemplate("my-template" /*, MyTemplate.git*/);
   }, []);
 
   return (
