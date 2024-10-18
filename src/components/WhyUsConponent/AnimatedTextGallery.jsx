@@ -1,65 +1,35 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./style.css"; // Create a CSS file to style your elements
-
-// Register the ScrollTrigger plugin with GSAP
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect } from "react";
+import AOS from "aos";
+//import "aos/dist/aos.css";
+import "./style.css"; // Your custom styles
 
 const AnimatedTextGallery = () => {
-  // Create refs for each section
-  const orangeRef = useRef(null);
-  const purpleRef = useRef(null);
-  const yoyoRef = useRef(null);
-
   useEffect(() => {
-    // Set default toggle actions for all ScrollTriggers
-    ScrollTrigger.defaults({
-      toggleActions: "restart pause resume pause",
+    AOS.init({
+      duration: 1000, // Duration of animations
+      easing: "ease-in-out", // Easing function
     });
-
-    // GSAP animation for the orange section
-    gsap.to(orangeRef.current.querySelector("p"), {
-      scrollTrigger: orangeRef.current, // Attach ScrollTrigger to the orange section
-      duration: 1,
-      delay: 1,
-      rotation: 360,
-    });
-
-    // GSAP animation for the purple section with custom ScrollTrigger options
-    gsap.to(purpleRef.current, {
-      scrollTrigger: {
-        trigger: purpleRef.current, // Attach ScrollTrigger to the purple section
-        toggleActions: "restart pause reverse pause",
-      },
-      duration: 2,
-      backgroundColor: "#FFAF45",
-      ease: "none",
-    });
-
-    // GSAP animation for the yoyo section with yoyo effect and repeat
-    gsap.to(yoyoRef.current.querySelector("p"), {
-      scrollTrigger: yoyoRef.current, // Attach ScrollTrigger to the yoyo section
-      scale: 1.4,
-      yoyo: true,
-      once: true,
-      duration: 2.5,
-      delay: 1,
-      ease: "power2",
-    });
+    AOS.refresh();
   }, []);
 
   return (
     <div className="container">
       <h3>Why choose us?</h3>
-      <div className="section orange" ref={orangeRef}>
-        <p>All your lessons are customised</p>
+      <div className="orange section" data-aos="fade-up">
+        <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
+          Customized approach
+        </p>
       </div>
-      <div className="section purple" ref={purpleRef}>
-        <p>You talk 60-70% of the time</p>
+      <div className="purple section" data-aos="fade-up">
+        <p>Talk 60-70% of the time</p>
       </div>
-      <div className="section yoyo" ref={yoyoRef}>
-        <p>You study flexibly with focus on your needs</p>
+      <div
+        className="yoyo section"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1500"
+      >
+        <p>Study flexibly with focus on your needs</p>
       </div>
     </div>
   );

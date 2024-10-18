@@ -6,9 +6,10 @@ import About from "./pages/About/About";
 import Study from "./pages/Study/Study";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import "./App.css"; // Add some CSS for layout styling
+import Admin from "./pages/Admin/Admin"; // Correct path to your Admin page
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header blogName="English for I" />
@@ -18,11 +19,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/study" element={<Study />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} /> {/* Admin route */}
+          {/* Redirect to the CMS */}
         </Routes>
       </div>
-      <Footer blogName="English for IT" />
+      <Footer blogName="English for I" />
     </Router>
   );
-}
+};
 
 export default App;

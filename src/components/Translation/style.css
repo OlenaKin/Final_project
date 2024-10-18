@@ -1,0 +1,45 @@
+.translateContainer {
+  max-height: 500px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.translateContainer .textArea {
+  max-width: 400px;
+  width: 100%;
+  height: 8rem;
+  border: 1px solid #33cbf9;
+  border-radius: 10px;
+}
+
+.translateContainer h3 {
+  text-align: center;
+}
+
+.translateContainer button {
+  display: block;
+
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0f1123; /* Custom blue color */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  width: 200px;
+}
+
+.translateContainer textarea {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.translateContainer textarea::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  font-style: italic;
+  padding: 5px;
+}

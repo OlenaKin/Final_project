@@ -1,104 +1,21 @@
 backend:
   name: git-gateway
-  branch: main # Branch to which content changes are pushed
+  branch: new # Branch to which content changes are pushed
 
 media_folder: "public/images" # Folder where media files (images, etc.) are stored
 public_folder: "/images" # URL path for accessing media files
 publish_mode: "editorial_workflow" # Enables the editorial workflow for content publishing
 
 collections:
-  - name: "home" # Identifier for the Home page
-    label: "Home Page" # Display name in the CMS UI
-    file: "_data/home.yml" # Path to the YAML file storing the Home page data
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        default: "Welcome to Our Website"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        default: "Discover our platform for English learning."
-      - label: "Body Content"
-        name: "body"
-        widget: "markdown"
-      - label: "SEO Title"
-        name: "seo_title"
-        widget: "string"
-        default: "Home - English for I"
-      - label: "SEO Description"
-        name: "seo_description"
-        widget: "text"
-        default: "The best place to learn English online."
-
-  - name: "about" # Identifier for the About (School) page
-    label: "About Page" # Display name in the CMS UI
-    file: "_data/about.yml" # Path to the YAML file storing the About page data
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        default: "About Our School"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        default: "Learn more about our English learning school."
-      - label: "Body Content"
-        name: "body"
-        widget: "markdown"
-      - label: "SEO Title"
-        name: "seo_title"
-        widget: "string"
-        default: "About Us - English for I"
-      - label: "SEO Description"
-        name: "seo_description"
-        widget: "text"
-        default: "Learn about the mission and history of our English school."
-
-  - name: "study" # Identifier for the Study page
-    label: "Study Page" # Display name in the CMS UI
-    file: "_data/study.yml" # Path to the YAML file storing the Study page data
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        default: "Study with Us"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        default: "Find all the information you need to start learning."
-      - label: "Body Content"
-        name: "body"
-        widget: "markdown"
-      - label: "SEO Title"
-        name: "seo_title"
-        widget: "string"
-        default: "Study Programs - English for I"
-      - label: "SEO Description"
-        name: "seo_description"
-        widget: "text"
-        default: "Explore our study programs and start your English journey."
-
-  - name: "contact" # Identifier for the Contact page
-    label: "Contact Page" # Display name in the CMS UI
-    file: "_data/contact.yml" # Path to the YAML file storing the Contact page data
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        default: "Contact Us"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        default: "Get in touch with us for any inquiries or assistance."
-      - label: "Body Content"
-        name: "body"
-        widget: "markdown"
-      - label: "SEO Title"
-        name: "seo_title"
-        widget: "string"
-        default: "Contact Us - English for I"
-      - label: "SEO Description"
-        name: "seo_description"
-        widget: "text"
-        default: "Contact us for more information about our school and programs."
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_posts/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
