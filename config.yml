@@ -1,141 +1,104 @@
 backend:
   name: git-gateway
-  branch: master
-media_folder: public/images
-public_folder: /images
-publish_mode: editorial_workflow
+  branch: main # Branch to which content changes are pushed
+
+media_folder: "public/images" # Folder where media files (images, etc.) are stored
+public_folder: "/images" # URL path for accessing media files
+publish_mode: "editorial_workflow" # Enables the editorial workflow for content publishing
 
 collections:
-  - name: "config"
-    label: "Config"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "general"
-        label: "Site Config"
-        file: "config.json"
-        description: "General site settings"
-        fields:
-          - label: "URL"
-            name: "base_url"
-            widget: "string"
-            hint: "Do not enter the trailing slash of the URL"
-          - label: "Site title"
-            name: "site_title"
-            widget: "string"
-          - label: "Site description"
-            name: "site_description"
-            widget: "string"
-          - label: "Site keywords"
-            name: "site_keywords"
-            widget: "list"
-            summary: "{{fields.keyword.keyword}}"
-            field:
-              label: Keyword
-              name: keyword
-              widget: "string"
-          - label: "Twitter account"
-            name: "twitter_account"
-            widget: "string"
-          - label: "GitHub account"
-            name: "github_account"
-            widget: "string"
-
-  - name: "meta"
-    label: "Meta"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "authors"
-        label: "Authors"
-        file: "meta/authors.yml"
-        description: "Author descriptions"
-        fields:
-          - name: authors
-            label: Authors
-            label_singular: "Author"
-            widget: list
-            fields:
-              - label: "Slug"
-                name: "slug"
-                widget: "string"
-                hint: "The part of a URL identifies the author"
-              - label: "Name"
-                name: "name"
-                widget: "string"
-                hint: "First and Last"
-              - label: "Introduction"
-                name: "introduction"
-                widget: "text"
-      - name: "tags"
-        label: "Tags"
-        file: "meta/tags.yml"
-        description: "List of tags"
-        fields:
-          - name: tags
-            label: Tags
-            label_singular: "Tag"
-            widget: list
-            fields:
-              - label: "Slug"
-                name: "slug"
-                widget: "string"
-                hint: "The part of a URL identifies the tag"
-              - label: "Display Name"
-                name: "name"
-                widget: "string"
-                hint: "Tag name for displaying on the site"
-
-  - name: "posts"
-    label: "Posts"
-    folder: "content/posts/"
-    extension: "mdx"
-    format: "frontmatter"
-    create: true
-    slug: "{{slug}}"
-    identifier_field: slug
-    summary: "{{title}}"
+  - name: "home" # Identifier for the Home page
+    label: "Home Page" # Display name in the CMS UI
+    file: "_data/home.yml" # Path to the YAML file storing the Home page data
     fields:
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Publish Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DD"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
-      - label: Author
-        name: "author"
-        widget: relation
-        collection: "meta"
-        file: "authors"
-        searchFields:
-          - "authors.*.name"
-        displayFields:
-          - "authors.*.name"
-        valueField: "authors.*.slug"
-      - label: Tags
-        label_singular: "Tag"
-        name: "tags"
-        widget: list
-        summary: "{{fields.tag}}"
-        field:
-          label: Tag
-          name: tag
-          widget: relation
-          collection: "meta"
-          file: "tags"
-          searchFields:
-            - "tags.*.name"
-          displayFields:
-            - "tags.*.name"
-          valueField: "tags.*.slug"
-      - label: "Body"
+        default: "Welcome to Our Website"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        default: "Discover our platform for English learning."
+      - label: "Body Content"
         name: "body"
         widget: "markdown"
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        default: "Home - English for I"
+      - label: "SEO Description"
+        name: "seo_description"
+        widget: "text"
+        default: "The best place to learn English online."
+
+  - name: "about" # Identifier for the About (School) page
+    label: "About Page" # Display name in the CMS UI
+    file: "_data/about.yml" # Path to the YAML file storing the About page data
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "About Our School"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        default: "Learn more about our English learning school."
+      - label: "Body Content"
+        name: "body"
+        widget: "markdown"
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        default: "About Us - English for I"
+      - label: "SEO Description"
+        name: "seo_description"
+        widget: "text"
+        default: "Learn about the mission and history of our English school."
+
+  - name: "study" # Identifier for the Study page
+    label: "Study Page" # Display name in the CMS UI
+    file: "_data/study.yml" # Path to the YAML file storing the Study page data
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Study with Us"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        default: "Find all the information you need to start learning."
+      - label: "Body Content"
+        name: "body"
+        widget: "markdown"
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        default: "Study Programs - English for I"
+      - label: "SEO Description"
+        name: "seo_description"
+        widget: "text"
+        default: "Explore our study programs and start your English journey."
+
+  - name: "contact" # Identifier for the Contact page
+    label: "Contact Page" # Display name in the CMS UI
+    file: "_data/contact.yml" # Path to the YAML file storing the Contact page data
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Contact Us"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        default: "Get in touch with us for any inquiries or assistance."
+      - label: "Body Content"
+        name: "body"
+        widget: "markdown"
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        default: "Contact Us - English for I"
+      - label: "SEO Description"
+        name: "seo_description"
+        widget: "text"
+        default: "Contact us for more information about our school and programs."
