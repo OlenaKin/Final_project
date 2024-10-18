@@ -18,22 +18,19 @@ const ContainerBody = () => {
     <div className="gsapContainer">
       <section>
         <div className="title titleGreathorned">
-          <span>English for IT</span> is not just important, but necessary,
-          because all technical documentation for the software is in English;
-          most domestic companies cooperate with foreign partners and often, if
-          not daily, use English. Therefore, for any IT company, English is an
-          opportunity to reach a new level with professionals in your team.
-          English for Information Technology is an advanced, multi-level course
-          for IT professionals created by Empire methodologies using authentic
-          materials from IT sources. Therefore, for any IT company, English is
-          an opportunity to reach a new level with professionals in your team.
-          English for Information Technology is an advanced, multi-level course
-          for IT professionals created by Empire methodologies using authentic
-          materials from IT sources.Therefore, for any IT company, English is an
-          opportunity to reach a new level with professionals in your team.
-          English for Information Technology is an advanced, multi-level course
-          for IT professionals created by Empire methodologies using authentic
-          materials from IT sources.
+          <div className="contBody__heading">
+            <span>English for IT </span> gives customised approach
+          </div>
+          <div className="contBody__paragraph">
+            Most domestic companies cooperate with foreign partners and often,
+            if not daily, use English. Therefore, for any IT company, English is
+            an opportunity to reach a new level with professionals in your team.
+            English for Information Technology is an advanced, multi-level
+            course for IT professionals created by Empire methodologies using
+            authentic materials from IT sources. Therefore, for any IT company,
+            English is an opportunity to reach a new level with professionals in
+            your team.
+          </div>
         </div>
       </section>
 
@@ -57,22 +54,19 @@ const ContainerBody = () => {
 
       <section>
         <div className="title titleBurrowing">
-          <span>English for Information Technology</span> is an advanced,
-          multi-level course for IT professionals created by Empire
-          methodologies using authentic materials from IT sources. English for
-          IT is not just important, but necessary, because all technical
-          documentation for the software is in English; most domestic companies
-          cooperate with foreign partners and often, if not daily, use English.
-          Therefore, for any IT company, English is an opportunity to reach a
-          new level with professionals in your team. Therefore, for any IT
-          company, English is an opportunity to reach a new level with
-          professionals in your team. English for Information Technology is an
-          advanced, multi-level course for IT professionals created by Empire
-          methodologies using authentic materials from IT sources.Therefore, for
-          any IT company, English is an opportunity to reach a new level with
-          professionals in your team. English for Information Technology is an
-          advanced, multi-level course for IT professionals created by Empire
-          methodologies using authentic materials from IT sources.
+          <div className="contBody__heading">
+            <span>English for IT </span> gives customised approach
+          </div>
+          <div className="contBody__paragraph">
+            Most domestic companies cooperate with foreign partners and often,
+            if not daily, use English. Therefore, for any IT company, English is
+            an opportunity to reach a new level with professionals in your team.
+            English for Information Technology is an advanced, multi-level
+            course for IT professionals created by Empire methodologies using
+            authentic materials from IT sources. Therefore, for any IT company,
+            English is an opportunity to reach a new level with professionals in
+            your team.
+          </div>
         </div>
       </section>
     </div>

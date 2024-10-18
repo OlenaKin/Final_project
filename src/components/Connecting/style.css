@@ -110,3 +110,10 @@ input::placeholder {
   font-style: italic;
   padding-left: 5px;
 }
+
+@media screen and (max-width: 540px) {
+  .contact-container {
+    width: 80%;
+    left: 10%;
+  }
+}

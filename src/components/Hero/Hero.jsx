@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick-theme.css";
 import groups from "../../assets/groups.jpg";
 import speaking from "../../assets/speaking.jpg";
 import individual from "../../assets/individual.jpg";
@@ -39,11 +39,9 @@ const Hero = () => {
               <p>
                 Our qualified teachers help students to overcome "freezing mode"
                 and speak freely. Our qualified teachers help students to
-                overcome "freezing mode" and speak freely. Our qualified
-                teachers help students to overcome "freezing mode" and speak
-                freely.
+                overcome "freezing mode" and speak freely.
               </p>
-              <Link to="/study">
+              <Link to="/study" className="link__button">
                 <button className="seeDetails">See details</button>
               </Link>
             </div>
@@ -61,11 +59,9 @@ const Hero = () => {
               <p>
                 Our qualified teachers help students to overcome "freezing mode"
                 and speak freely. Our qualified teachers help students to
-                overcome "freezing mode" and speak freely. Our qualified
-                teachers help students to overcome "freezing mode" and speak
-                freely.
+                overcome "freezing mode" and speak freely.
               </p>
-              <Link to="/study">
+              <Link to="/study" className="link__button">
                 <button className="seeDetails">See details</button>
               </Link>
             </div>
@@ -85,11 +81,9 @@ const Hero = () => {
               <p>
                 Our qualified teachers help students to overcome "freezing mode"
                 and speak freely. Our qualified teachers help students to
-                overcome "freezing mode" and speak freely. Our qualified
-                teachers help students to overcome "freezing mode" and speak
-                freely.
+                overcome "freezing mode" and speak freely.
               </p>
-              <Link to="/study">
+              <Link to="/study" className="link__button">
                 <button className="seeDetails">See details</button>
               </Link>
             </div>
