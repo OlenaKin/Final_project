@@ -1,32 +1,16 @@
 import React, { useEffect } from "react";
-import gsap from "gsap";
-//import ScrollTrigger from "gsap/ScrollTrigger";
+import AOS from "aos";
 import "./style.css"; // Your custom styles
 
 function ContactSection() {
-  // Initialize GSAP animations for the form when the component mounts
-  /*useEffect(() => {
-    // GSAP animation for the contact-container
-    gsap.fromTo(
-      ".contact-container",
-      { autoAlpha: 0, x: -400 }, // Initial state (hidden, and off-screen left)
-      {
-        autoAlpha: 1,
-        x: 0,
-        delay: 1,
-        duration: 1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".contact-container", // Animation starts when this element enters the viewport
-          start: "top 80%", // Trigger animation when the top of `.contact-container` is 80% from the top of the viewport
-          end: "bottom center", // End point for the trigger
-          toggleActions: "play none none none", // Play animation on enter
-          once: true, // Run animation only once
-        },
-      } // Final state (fully visible and moves to the center)
-    );
-  }, []);*/
-
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration (in ms)
+      easing: "ease-in-out", // Easing function
+    });
+    AOS.refresh(); // Refresh to apply the animations
+  }, []);
   return (
     <div className="bottom-block">
       <div className="map-block" id="contacts">
@@ -43,7 +27,7 @@ function ContactSection() {
         ></iframe>
 
         {/* Contact Form */}
-        <div className="contact-container">
+        <div className="contact-container" data-aos="flip-left">
           <h5>Reach Out:</h5>
           <div className="form">
             <form id="contact-form" className="contact-form">

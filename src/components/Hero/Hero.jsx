@@ -27,41 +27,6 @@ const Hero = () => {
   return (
     <section className="hero__section">
       <div className="hero" id="about_us">
-        {/*<Slider {...settings} className="hero__text-slider slick-container">
-          <div className="hero__text-slider">
-            {/*first slide}
-            <div className="main__mySlides">
-              <div className="hero__text-block">
-                <h2>To this...</h2>
-                <h3>Confident, sharp, smart</h3>
-              </div>
-              <div className="hero__photo-block">
-                <img src={unsure} alt="unsure" />
-              </div>
-            </div>
-            {/*second slide}
-            <div className="main__mySlides">
-              <div className="hero__text-block">
-                <h2>To this...</h2>
-                <h3>Confident, sharp, smart</h3>
-              </div>
-              <div className="hero__photo-block">
-                <img src={unsure} alt="unsure" />
-              </div>
-            </div>
-            {/*third slide}
-            <div className="main__mySlides">
-              <div className="hero__text-block">
-                <h2>And this...</h2>
-                <h3>Able, strong, dominant</h3>
-              </div>
-              <div className="hero__photo-block">
-                <img src={unsure} alt="unsure" />
-              </div>
-            </div>
-          </div>
-        </Slider>*/}
-        {/* <h1>{title}</h1> */}
         <Slider {...settings} className="hero__text-slider slick-container">
           {/* first slide */}
           <div className="hero__mySlides">
