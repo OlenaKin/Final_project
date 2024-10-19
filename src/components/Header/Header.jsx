@@ -37,9 +37,7 @@ function Header({ blogName }) {
             <li>
               <Link to="/">Home</Link> {/* Use Link instead of <a href> */}
             </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
+
             <li>
               <Link to="/study">Study</Link> {/* Corrected the path */}
             </li>

@@ -40,7 +40,7 @@ const ProductDisplay = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 1000, // Duration of the animation
+      duration: 2000, // Duration of the animation
       easing: "ease-in-out", // Easing function
     });
   }, []);
@@ -53,7 +53,7 @@ const ProductDisplay = () => {
           <div
             key={product.id}
             className="product-card"
-            data-aos="fade-down"
+            data-aos="flip-up"
             data-aos-delay={index * 200}
           >
             <h2>{product.name}</h2>

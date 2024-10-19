@@ -1,20 +1,21 @@
 .hero {
   position: relative;
   width: 100%;
-  max-height: 480px;
+  max-height: 500px;
+  height: 100%;
   /* border-radius: 15px; */
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   padding: 20px;
-  /* background-image: linear-gradient( 
+  background-image: linear-gradient(
       rgba(132, 210, 255, 0.925),
       rgba(173, 194, 222, 0.887)
     ),
-    url("../../assets/cosmopolitan.jpg");*/
-  background-size: cover; /* Make sure the image covers the entire div */
+    url("../../assets/cosmopolitan.jpg");
+  background-size: cover; /* Make sure the image covers the entire div 
   background-position: center;
   /* background-image: url("../../assets/cosmopolitan.jpg"); */
 }
@@ -166,11 +167,6 @@ h3 {
   font-style: italic;
 }
 
-.link__button {
-  /* border: 2px solid green; */
-  margin: 0 auto;
-}
-
 .hero__text-block .seeDetails {
   width: 200px;
   height: 40px;
@@ -180,7 +176,6 @@ h3 {
   background-color: #0f1123;
   color: white;
   cursor: pointer;
-  margin: 0 auto;
 }
 
 span {
@@ -618,6 +613,11 @@ span {
 
   .hero__photo-block {
     display: none;
+  }
+
+  .link__button {
+    /* border: 2px solid green; */
+    margin: 0 auto;
   }
 
   .hero__text-block .seeDetails {

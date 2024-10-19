@@ -57,7 +57,7 @@ const ContainerBody = () => {
           <div className="contBody__heading">
             <span>English for IT </span> gives customised approach
           </div>
-          <div className="contBody__paragraph">
+          <div className="contBody__paragraph second__paragraph">
             Most domestic companies cooperate with foreign partners and often,
             if not daily, use English. Therefore, for any IT company, English is
             an opportunity to reach a new level with professionals in your team.

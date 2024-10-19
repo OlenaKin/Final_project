@@ -12,13 +12,17 @@
   display: flex;
   justify-content: space-around; /* Distributes items evenly */
   flex-wrap: wrap; /* Allows wrapping to next line on small screens */
-  gap: auto;
+  gap: 30px;
   margin-bottom: 20px;
 }
 
 .product-card {
   border: 1px solid #ccc; /* Light gray border */
-  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(
+    to top,
+    rgba(120, 175, 252, 0.925),
+    rgba(173, 232, 248, 0.887)
+  );
   padding: 20px;
   flex: 1;
   margin: 10px; /* Space between cards */
