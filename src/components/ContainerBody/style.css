@@ -111,7 +111,6 @@ section {
 .dotsBlue {
   width: 100%;
   height: auto;
-  max-width: 380px;
   max-height: 340px;
   z-index: 3;
   left: 0;
@@ -192,7 +191,12 @@ section {
     font-family: "Libre Baskerville", serif;
     font-size: 1.2rem;
   }
+
+  .dotsBlue {
+    max-width: 380px;
+  }
 }
+
 @media screen and (max-width: 1025px) {
   section {
     font-family: "Libre Baskerville", serif;
@@ -213,6 +217,7 @@ section {
     max-width: 340px;
     left: 0;
     top: 56px;
+    max-width: auto;
   }
   .owlHorned {
     max-width: 310px;
@@ -250,13 +255,13 @@ section {
     height: 436px;
   }
   .dotsBlue {
-    max-width: 274px;
+    max-width: auto;
     left: 0;
     top: 45px;
   }
   .owlHorned,
   .owlBurrowing {
-    max-width: 248px;
+    display: none;
   }
   .circle {
     max-width: 196px;
@@ -302,9 +307,10 @@ section {
     text-align: center;
   }
   .dotsBlue {
-    width: 100%;
+    width: 430px;
     margin: 5px auto;
-    top: 15px;
+    margin-left: 15px;
+    top: 0;
   }
   .owlHorned {
     display: none;

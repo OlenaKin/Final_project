@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Study from "./pages/Study/Study";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Admin from "./pages/Admin/Admin"; // Correct path to your Admin page
+import Admin from "./pages/Admin/Admin";
 
 import "./App.css";
 
@@ -21,7 +21,7 @@ const App = () => {
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="/study" element={<Study />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} /> {/* Admin route */}
+          <Route path="/admin" element={<Admin />} />
           {/* Redirect to the CMS */}
         </Routes>
       </div>
