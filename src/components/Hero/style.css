@@ -7,7 +7,7 @@
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 70px;
   padding: 20px;
   background-image: linear-gradient(
@@ -168,14 +168,44 @@ h3 {
 }
 
 .hero__text-block .seeDetails {
-  width: 200px;
-  height: 40px;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  box-shadow: 1px 1px 2px rgb(23, 5, 87);
-  background-color: #0f1123;
-  color: white;
+  /* font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  margin-top: 20px;
+  width: 200px;
+  filter: drop-shadow(0 0 1rem rgb(3, 86, 250));
+  color: #362fd9;
+  background: var(--purple-900);
+  border: 0.5px solid;
+  border-color: rgb(23, 5, 87);
+  border-radius: 0.75rem;
+  color: rgb(210, 234, 242);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: ease-in-out;
+  text-transform: uppercase;
+  line-height: 20px; */
+
+  color: rgb(23, 5, 87);
+  font-size: 1rem;
+  border: 2px solid rgb(23, 5, 87);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(3, 86, 250);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  filter: drop-shadow(0 0 1rem rgb(3, 86, 250));
+}
+
+.hero__text-block .seeDetails:hover {
+  /* background-color: rgb(58, 167, 250); */
+  box-shadow: inset 400px 50px 0 0 rgb(3, 86, 250);
 }
 
 span {
@@ -536,7 +566,7 @@ span {
 .slick-dots li button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
-  border: 2px solid #362fd9; /* Create the border for inactive dots */
+  border: 2px solid rgb(3, 86, 250); /* Create the border for inactive dots */
   display: block;
   height: 100%;
   width: 100%;
@@ -560,7 +590,7 @@ span {
 .slick-dots li.slick-active button {
   opacity: 0.75;
 
-  background-color: #362fd9; /* Fill the active dot */
+  background-color: rgb(3, 86, 250); /* Fill the active dot */
   border: none; /* Remove border for active dot */
   box-shadow: 2px 2px 4px #6a52ba;
 }
@@ -569,7 +599,7 @@ span {
   content: "";
   width: 100%; /* Ensure fill fits the button size */
   height: 100%; /* Ensure fill fits the button size */
-  background-color: #362fd9; /* Active dot filled with white */
+  background-color: rgb(3, 86, 250); /* Active dot filled with white */
   border-radius: 50%; /* Ensure round shape */
   position: absolute; /* Position within the button */
   top: 0;

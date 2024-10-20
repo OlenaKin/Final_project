@@ -38,7 +38,10 @@
 }
 
 .contBody__heading {
-  margin: 40px auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 40px;
   line-height: 50px;
   font-family: "Teko", sans-serif;
@@ -47,6 +50,7 @@
   flex: 1;
   color: #362fd9;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.566);
 }
 
 .contBody__paragraph {
@@ -82,10 +86,10 @@ section {
 
 .cluster {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 540px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background-color: transparent;
   padding-bottom: 0;
 }
@@ -95,10 +99,10 @@ section {
 }
 
 .circle {
-  width: 360px;
+  width: 300px;
   height: auto;
   top: 150px;
-  left: 300px;
+  left: 250px;
   bottom: 0;
   z-index: 500;
   /* border: 3px solid rgb(192, 217, 48); */
@@ -107,21 +111,21 @@ section {
 .dotsBlue {
   width: 100%;
   height: auto;
-  max-width: 400px;
-  max-height: 380px;
+  max-width: 380px;
+  max-height: 340px;
   z-index: 3;
   left: 0;
   top: 20px;
   /* border: 3px solid purple; */
-  overflow: hidden;
+  overflow: visible;
 }
 
 .owlHorned {
   width: 100%;
-  height: auto;
-  max-width: 600px;
-  top: 0;
-  right: 0;
+  height: 280px;
+  max-width: 450px;
+  top: 20px;
+  right: 0px;
   z-index: 2;
   /* border: 3px solid rgb(32, 136, 82); */
   overflow: hidden;

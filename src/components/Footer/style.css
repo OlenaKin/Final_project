@@ -1,23 +1,23 @@
 footer {
   position: relative;
-  background-color: #33cbf9;
+  background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(1, 4, 4, 0.3);
   color: white;
   /* max-width: 1440px; */
   width: 100%;
-  max-height: 80px;
+  max-height: 70px;
   height: 100%;
   overflow: hidden;
+  padding: 10px;
 }
 
 .footer-content {
   display: flex;
-  max-height: 100px;
+  max-height: 70px;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
 }
 
 .footer__blogName {
@@ -30,11 +30,11 @@ footer {
 .footer__blogName .footer__logo {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   transform: rotateX(180deg);
   transform: rotateY(180deg);
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 
 footer a {
@@ -45,21 +45,31 @@ footer h2 {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 20px;
   margin: 20px 0;
   white-space: nowrap;
   color: #000000;
   padding-left: 8px;
 }
 
-.Contact {
+.Contact_box {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   padding-right: 8px;
   color: #000000;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
 }
 
-.footer-content a,
+.Contact_box p {
+  margin-right: 10px;
+}
+.Contact_box p span {
+  margin-left: 10px;
+}
+
+/* .footer-content a,
 .footer-content a:active {
   color: white;
-}
+} */

@@ -39,7 +39,7 @@ const ContainerBody = () => {
           <img src={comfort} alt="Great Horned Owl" />
         </div>
 
-        <div data-aos="fade-up-right">
+        <div data-aos="fade-down-right">
           <img
             className="dotsBlue clusterPieces"
             src={comfortGroup}

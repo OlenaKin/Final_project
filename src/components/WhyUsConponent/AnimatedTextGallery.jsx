@@ -13,7 +13,7 @@ const AnimatedTextGallery = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="animated_container">
       <h3>Why choose us?</h3>
       <div className="orange section" data-aos="fade-up">
         <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">

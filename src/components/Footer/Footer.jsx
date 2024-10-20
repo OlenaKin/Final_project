@@ -20,14 +20,12 @@ const Footer = ({ blogName }) => {
           </div>
         </Link>
 
-        <div className="Contact">
+        <div className="Contact_box">
           {/* Contact Information */}
-          <h4>Contact Us:</h4>
+          <h6>Contact Us:</h6>
           <p>
-            <i className="fas fa-phone"></i> +39 234 567 890
-          </p>
-          <p>
-            <i className="fas fa-envelope"></i> contact@yourcompany.com
+            +39 234 567 890
+            <span>contact@yourcompany.com</span>{" "}
           </p>
         </div>
       </div>

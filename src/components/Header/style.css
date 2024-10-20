@@ -1,11 +1,13 @@
 header {
-  color: black;
+  color: white;
   width: 100%;
-  height: 80px;
+  height: 70px;
   position: fixed;
   z-index: 1000;
-  background-color: #33cbf9;
+  background-color: rgb(3, 86, 250);
   box-shadow: 0px 4px 10px rgba(1, 4, 4, 0.3);
+  display: flex;
+  align-items: center;
 }
 
 .header__container {
@@ -48,7 +50,7 @@ header {
   font-size: 24px;
   background: none;
   border: none;
-  color: #000000;
+  color: white;
   cursor: pointer;
   display: none; /* Hide by default */
   margin-right: 20px;
@@ -59,7 +61,10 @@ header {
 nav {
   position: absolute;
   margin-right: 20px;
+  margin-top: 10px;
   right: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -75,7 +80,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color: rgba(255, 255, 255, 0.806);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -87,22 +92,10 @@ header h2 {
   font-size: 26px;
   margin: 20px 0;
   white-space: nowrap;
-  color: #000000;
+  color: rgba(255, 255, 255, 0.806);
   padding-left: 8px;
   font-family: "Dancing Script", cursive;
 }
-
-/* Banner Styles */
-
-/* Layout for blog and news */
-/*.content-container {
-    display: flex;
-    margin-top: 20px;
-    align-items: start;
-    gap: 20px;
-    height: 100%;
-    flex-wrap: wrap;
-  }*/
 
 @media (max-width: 768px) {
   .header__container {
@@ -142,7 +135,6 @@ header h2 {
     height: 100vh; /* Full viewport height */
     width: 100%;
     background-color: #33cbf9;
-
     z-index: 1000; /* Ensure it appears above other content */
   }
 
@@ -167,11 +159,10 @@ header h2 {
 
   nav ul li a {
     color: #3b3030;
-    font-size: 20px;
-
     text-decoration: none;
     margin-right: 10px;
     text-transform: uppercase;
+    font-size: 18px;
   }
 
   nav ul {
@@ -188,4 +179,59 @@ header h2 {
   .content-container {
     flex-direction: column;
   }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-overlay {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* top: 52px;  */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+
+  background-color: #33cbf9;
+
+  /* z-index: 1000;  */
+}
+
+.close-menu {
+  background: transparent;
+  border: none;
+  color: white; /* Color for the close button */
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  /* margin: 10px 0; */
 }

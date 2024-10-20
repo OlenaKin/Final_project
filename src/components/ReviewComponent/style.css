@@ -1,14 +1,14 @@
-.review__block {
+/* .review__block { 
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
-  height: 30rem;
+  height: auto;
   max-width: 1200px;
   width: 100%;
-  /* border: 2px solid red; */
+  /* border: 2px solid red; 
 }
 
-.customer-container {
+/* .customer-container { 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -23,7 +23,7 @@
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
-  font-size: 38px;
+  font-size: 30px;
   color: #362fd9;
 }
 
@@ -41,15 +41,22 @@
       rgba(239, 246, 255, 0.887)
     ),
     url("../../assets/cosmopolitan.jpg");
-  /* border: 2px solid rgba(34, 231, 253, 0.8); */
-}
+  /* border: 2px solid rgba(34, 231, 253, 0.8);
+}*/
 
-.review h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #291480;
-}
+.review__container h3 {
+  font-family: "Teko", sans-serif;
+  text-shadow: none;
+  color: #362fd9;
+  /*text-shadow: 2px 2px 4px #3b3030;*/
+  text-align: left;
+
+  line-height: 64px;
+  font-style: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+} /*
 
 .rating {
   font-size: 24px;
@@ -68,4 +75,30 @@
 
   .review {
   }
+}
+
+.row.align-items-stretch .card:only-of-type {
+  height: 100%;
+} */
+
+.review__container {
+  text-align: center;
+  /* border: 2px solid red; */
+  margin-bottom: 50px;
+}
+
+.col-md-8 {
+  margin: 0 auto;
+  height: auto;
+}
+
+.profile-circle img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 30px;
+}
+
+.review__container .slick-dots {
+  top: 95%;
 }

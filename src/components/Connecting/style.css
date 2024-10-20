@@ -46,29 +46,25 @@
 }
 
 .bottom-block__submit-button {
+  color: rgb(23, 5, 87);
   font-size: 1rem;
+  border: 2px solid rgb(23, 5, 87);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px auto;
-  margin-top: 20px;
-  width: 200px;
+  box-shadow: inset 0 0 0 0 rgb(3, 86, 250);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
   filter: drop-shadow(0 0 1rem rgb(3, 86, 250));
-  color: #362fd9;
-  background: var(--purple-900);
-  border: 0.5px solid;
-  border-color: rgb(23, 5, 87);
-  border-radius: 0.75rem;
-  color: rgb(210, 234, 242);
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  transition: ease-in-out;
-  text-transform: uppercase;
-  line-height: 20px;
 }
 
 .bottom-block__submit-button:hover {
-  color: black;
-  background-color: rgb(58, 167, 250);
+  /* background-color: rgb(58, 167, 250); */
+  box-shadow: inset 400px 50px 0 0 rgb(3, 86, 250);
 }
 
 .bottom-block__submit-button .text {
@@ -115,5 +111,9 @@ input::placeholder {
   .contact-container {
     width: 80%;
     left: 10%;
+  }
+
+  .bottom-block {
+    height: 100vh;
   }
 }
