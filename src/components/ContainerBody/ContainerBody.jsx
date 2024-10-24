@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import comfort from "../../assets/comfort.jpg";
-import comfortGroup from "../../assets/group-comfort.jpg";
-import joy from "../../assets/joy.jpg";
+import individualTime from "../../assets/individual.jpg";
+import interviewTime from "../../assets/interviewTime.jpg";
+import speakingTime from "../../assets/speakingTime.jpg";
 import AOS from "aos";
 import "./style.css";
 
@@ -11,6 +11,10 @@ const ContainerBody = () => {
     AOS.init({
       duration: 1000, // Duration of animations
       easing: "ease-in-out", // Easing function
+      delay: 500,
+      offset: 100,
+      once: true,
+      throttleDelay: 99,
     });
   }, []);
 
@@ -34,21 +38,19 @@ const ContainerBody = () => {
         </div>
       </section>
 
-      <section className="cluster clusterGreat">
-        <div className="owlHorned clusterPieces" data-aos="fade-up-left">
-          <img src={comfort} alt="Great Horned Owl" />
-        </div>
+      <section className="clusterGreat">
+        <div className="cluster">
+          <div className="owlHorned clusterPieces" data-aos="fade-left">
+            <img src={speakingTime} alt="Great Horned Owl" />
+          </div>
 
-        <div data-aos="fade-down-right">
-          <img
-            className="dotsBlue clusterPieces"
-            src={comfortGroup}
-            alt="Blue Dots"
-          />
-        </div>
+          <div className="dotsBlue clusterPieces" data-aos="zoom-in-down">
+            <img src={interviewTime} alt="interview" />
+          </div>
 
-        <div className="circle clusterPieces" data-aos="fade-up">
-          <img src={joy} alt="Great Horned Owl" />
+          <div className="circle clusterPieces" data-aos="fade-right">
+            <img src={individualTime} alt="Great Horned Owl" />
+          </div>
         </div>
       </section>
 
