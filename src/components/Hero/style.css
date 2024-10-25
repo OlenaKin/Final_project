@@ -147,7 +147,7 @@ h1 {
   line-height: 57.52px;
   font-size: 3.6rem;
   margin-bottom: 10px;
-  text-align: left;
+  /* text-align: left; */
   text-transform: uppercase;
   color: #3b3030;
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
@@ -219,6 +219,7 @@ span {
     h1 {
       margin-bottom: 20px;
       font-size: 80px;
+      text-align: left;
     }
   }
 }
@@ -233,10 +234,12 @@ span {
 
     h1 {
       font-size: 26px;
+      text-align: center;
     }
 
     h2 {
       font-size: 14px;
+      text-align: center;
     }
   }
 }
@@ -610,7 +613,7 @@ span {
   .hero {
     margin-bottom: 10px;
     height: auto;
-    text-align: left;
+    text-align: center;
   }
 
   h1 {
@@ -624,6 +627,7 @@ span {
     line-height: 20px;
     margin: 0 auto;
     margin-bottom: 15px;
+    text-align: center;
   }
   .hero__mySlides {
     flex-direction: column;
