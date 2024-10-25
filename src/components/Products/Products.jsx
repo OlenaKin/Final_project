@@ -104,8 +104,9 @@ const ProductDisplay = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 2000, // Duration of the animation
+      duration: 1500, // Duration of the animation
       easing: "ease-in-out", // Easing function
+      once: "true",
     });
   }, []);
 
@@ -126,7 +127,7 @@ const ProductDisplay = () => {
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.description}</p>
-                <h4>{product.price}</h4>
+                <h4 className="price">{product.price}</h4>
                 <Link to="/contact">
                   <button className="btn btn-light">Contact Us</button>
                 </Link>

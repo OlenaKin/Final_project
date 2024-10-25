@@ -1,54 +1,50 @@
 .container {
-  /* text-align: center; 
-  padding: 20px;
-  width: 100%;
-  height: 200vh;
-  margin: 0 auto;*/
   margin-top: 100px;
-  gap: 30px;
   text-align: center;
   height: auto;
 }
 
-/* .products { /*
+.row {
   display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
-  gap: 30px;
-  margin-bottom: 20px; 
-}*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0;
+}
 
 .col-md-4 {
+  position: relative;
   flex: 1;
   margin: 10px; /* Space between cards */
   /* box-shadow: 1px 1px 2px rgb(23, 5, 87); */
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-
-  /* Subtle shadow for 3D effect */
+  padding: 10px;
 }
 
 .container h3 {
   font-family: "Teko", sans-serif;
   text-shadow: none;
   color: black;
-  /*text-shadow: 2px 2px 4px #3b3030;*/
-  text-align: left;
 
+  text-align: left;
   line-height: 64px;
   font-style: none;
+  font-size: 50px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.product-container h4 {
+/* .product-container h4 {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 50px;
   font-size: 46px;
+  padding-bottom: 20px;
+} */
+
+.card-header {
+  font-size: 30px;
 }
 
 .product-card h2 {
@@ -57,19 +53,27 @@
   font-size: 24px;
 }
 
-.product-card h4 {
-  color: green; /* Color for the price */
-  margin-bottom: 18px;
+.price {
+  position: absolute;
+  bottom: 10%;
+  color: white; /* Color for the price */
+  margin-bottom: 50px;
+  bottom: 50px; /* Adjusts distance from the bottom */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.product-card p {
+.card-body p {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 150px;
   text-align: left;
 }
 
 /* .product-card button { */
 .btn-light {
+  right: 24%;
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #0f1123; /* Custom blue color */
@@ -80,7 +84,12 @@
   transition: background-color 0.3s ease;
   margin: 10px auto;
   width: 150px;
-  margin-top: auto;
+  position: absolute;
+  bottom: 20px; /* Adjusts distance from the bottom */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testingButton {
@@ -113,4 +122,24 @@
 
 .testingButton .text {
   filter: drop-shadow(0 0 1px rgb(23, 5, 87));
+}
+
+@media (min-width: 768px) {
+  .container {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    gap: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    width: auto;
+  }
 }
